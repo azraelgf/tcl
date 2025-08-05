@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Контакты</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="stylesheet" href="css/style.min.css?_v=20250805130943">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!--	 <style>body{opacity: 0;}</style>-->
+	<style>
+		/* Начальное состояние */
+		body {
+			opacity: 0;
+			transition: opacity 0.5s ease-in-out;
+		}
+
+		/* Класс, добавляемый после загрузки */
+		html.loaded body {
+			opacity: 1;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<div class="header__inner">
+					<a href="/" class="header__logo logo"><img src="img/logo.svg" alt="Logo"></a>
+					<div class="header__menu menu">
+						<nav class="menu__body">
+							<ul class="menu__list" data-spoilers="1199.98">
+								<li class="menu__item has-menu">
+									<a href="#" class="menu__link" data-spoiler>
+										<span>Услуги</span>
+										<svg>
+											<use xlink:href="img/icons/icons.svg#dropdown"></use>
+										</svg>
+									</a>
+
+									<ul class="submenu">
+										<li class="submenu__item">
+											<a href="">Доставка</a>
+										</li>
+										<li class="submenu__item">
+											<a href="">Lorem ipsum dolor sit.</a>
+										</li>
+										<li class="submenu__item">
+											<a href="">Lorem ipsum.</a>
+										</li>
+										<li class="submenu__item">
+											<a href="">Lorem ipsum dolor. </a>
+										</li>
+									</ul>
+								</li>
+								<li class="menu__item"><a href="#" class="menu__link">О компании</a></li>
+								<li class="menu__item has-menu">
+									<a href="#" class="menu__link" data-spoiler><span>Доставка</span>
+										<svg>
+											<use xlink:href="img/icons/icons.svg#dropdown"></use>
+										</svg>
+									</a>
+									<ul class="submenu">
+										<li class="submenu__item">
+											<a href="">Доставка</a>
+										</li>
+										<li class="submenu__item">
+											<a href="">Lorem ipsum dolor sit.</a>
+										</li>
+										<li class="submenu__item">
+											<a href="">Lorem ipsum.</a>
+										</li>
+										<li class="submenu__item">
+											<a href="">Lorem ipsum dolor. </a>
+										</li>
+									</ul>
+								</li>
+								<li class="menu__item"><a href="#" class="menu__link">Отследить груз</a></li>
+								<li class="menu__item"><a href="#" class="menu__link">Блог</a></li>
+								<li class="menu__item"><a href="#" class="menu__link">Контакты</a></li>
+							</ul>
+						</nav>
+					</div>
+					<div class="header__right">
+						<div class="header__contacts" data-da=".menu__body, 1199.98">
+							<a href="tel:+73332220088">+7 (333) 222-00-88</a>
+							<a href="mailto:Topchinalogistics@mail.com">Topchinalogistics@mail.com</a>
+						</div>
+						<button class="header__btn button button_create" data-da=".menu__body, 1199.98" type="button">
+							<span>Рассчитать стоимость</span>
+							<svg>
+								<use xlink:href="img/icons/icons.svg#arrow"></use>
+							</svg>
+						</button>
+						<a href="" class="header__signup signup">
+							<div class="signup__icon">
+								<svg>
+									<use xlink:href="img/icons/icons.svg#user"></use>
+								</svg>
+							</div>
+							<span>Войти</span>
+						</a>
+						<button type="button" class="menu__icon icon-menu"><span></span></button>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<main class="page">
+			<nav class="breadcrumbs">
+				<div class="breadcrumbs__container">
+					<ul class="breadcrumbs__list">
+						<li class="breadcrumbs__item"><a href="" class="breadcrumbs__link">Главная</a></li>
+						<li class="breadcrumbs__item"><span class="breadcrumbs__current">Контакты</span>
+						</li>
+					</ul>
+				</div>
+			</nav>
+			<section class="section contacts section_bottom">
+				<div class="section__container">
+					<div class="contacts__inner">
+						<div class="contacts__content">
+							<h1 class="contacts__title title"><span>Свяжитесь</span> с&nbsp;нами</h1>
+							<div class="contacts__info">
+								<a href="tel:+73332220088">+7 (333) 222-00-88</a>
+								<a href="tel:+72223331177">+7 (222) 333-11-77</a>
+								<a href="mailto:topchinalogistics@mail.com">Topchinalogistics@mail.com</a>
+							</div>
+							<div class="contacts__social social">
+								<a href="" class="social__item">
+									<span>Telegram</span>
+									<svg>
+										<use xlink:href="img/icons/icons.svg#arrow"></use>
+									</svg>
+								</a>
+								<a href="" class="social__item">
+									<span>WhatsaApp</span>
+									<svg>
+										<use xlink:href="img/icons/icons.svg#arrow"></use>
+									</svg>
+								</a>
+							</div>
+							<div class="contacts__img">
+								<img src="img/contacts/01.webp" alt="Image" class="ibg">
+								<img src="img/contacts/02.webp" alt="Image" class="ibg">
+								<img src="img/contacts/03.webp" alt="Image" class="ibg">
+							</div>
+
+						</div>
+						<div class="contacts__form">
+							<div class="form">
+								<div class="form__title title_h2 title">Оставить заявку</div>
+								<form action="#">
+									<div class="form__inner">
+										<div class="form__row">
+											<div class="sel-item">
+												<label class="sel-item__label">Имя
+													<input class="input" autocomplete="off" type="text" name="form[]" placeholder="Иван"></label>
+											</div>
+										</div>
+										<div class="form__row form__row_flex">
+											<div class="form__column">
+												<div class="sel-item">
+													<label class="sel-item__label">Телефон
+														<input class="input" autocomplete="off" type="text" name="form[]" placeholder="+7 988 258 87 16"></label>
+												</div>
+											</div>
+											<div class="form__column">
+												<div class="sel-item">
+													<label class="sel-item__label">Почта
+														<input class="input" autocomplete="off" type="text" name="form[]" placeholder="Topchinalogistics@mail.com"></label>
+												</div>
+											</div>
+										</div>
+										<div class="form__row">
+											<div class="sel-item">
+												<label class="sel-item__label">Комментарий
+													<input class="input" autocomplete="off" type="text" name="form[]" placeholder="Что хотите узнать ?"></label>
+											</div>
+										</div>
+										<div class="form__row">
+											<button class="form__button button button_icon button_outline button_form" type="button">
+												<span>Дополнительные материалы</span>
+												<span class="button__icon">
+													<svg>
+														<use xlink:href="img/icons/icons.svg#filter"></use>
+													</svg>
+												</span>
+											</button>
+										</div>
+										<div class="form__row">
+											<button class="form__button button button_icon button_form" type="button">
+												<span>Отправить</span>
+												<span class="button__icon">
+													<svg>
+														<use xlink:href="img/icons/icons.svg#arrow"></use>
+													</svg>
+												</span>
+											</button>
+										</div>
+										<div class="form__row">
+											<div class="checkbox">
+												<input id="c_1" class="checkbox__input" type="checkbox" value="1" name="form[]">
+												<label for="c_1" class="checkbox__label">
+													<span class="checkbox__text">Согласен с политикой <a href="">обработки персональных данных</a></span>
+												</label>
+											</div>
+										</div>
+									</div>
+
+								</form>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section filial section_bg bg-gray">
+				<div class="section__container">
+					<h2 class="section__title title"><span>Наши</span> филиалы</h2>
+					<div class="filial__items">
+						<div class="filial__item item-filial">
+							<div class="item-filial__img">
+								<img src="img/contacts/filials/01.webp" alt="Image" class="ibg">
+							</div>
+							<div class="item-filial__info">
+								<div class="item-filial__title">Название</div>
+								<div class="item-filial__info-contacts">
+									<a class="item-filial__link" href="tel:+72223331177">+7 (222) 333-11-77</a>
+									<a class="item-filial__link" href="mailto:topchinalogistics@mail.com">Topchinalogistics@mail.com</a>
+									<div class="item-filial__link"><span>пн-сб</span> 9:00-21:00</div>
+								</div>
+								<div class="item-filial__social social">
+									<a href="" class="social__item">
+										<span>Telegram</span>
+										<svg>
+											<use xlink:href="img/icons/icons.svg#arrow"></use>
+										</svg>
+									</a>
+									<a href="" class="social__item">
+										<span>WhatsaApp</span>
+										<svg>
+											<use xlink:href="img/icons/icons.svg#arrow"></use>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="filial__item item-filial">
+							<div class="item-filial__img">
+								<img src="img/contacts/filials/02.webp" alt="Image" class="ibg">
+							</div>
+							<div class="item-filial__info">
+								<div class="item-filial__title">Название</div>
+								<div class="item-filial__info-contacts">
+									<a class="item-filial__link" href="tel:+72223331177">+7 (222) 333-11-77</a>
+									<a class="item-filial__link" href="mailto:topchinalogistics@mail.com">Topchinalogistics@mail.com</a>
+									<div class="item-filial__link"><span>пн-сб</span> 9:00-21:00</div>
+								</div>
+								<div class="item-filial__social social">
+									<a href="" class="social__item">
+										<span>Telegram</span>
+										<svg>
+											<use xlink:href="img/icons/icons.svg#arrow"></use>
+										</svg>
+									</a>
+									<a href="" class="social__item">
+										<span>WhatsaApp</span>
+										<svg>
+											<use xlink:href="img/icons/icons.svg#arrow"></use>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="filial__item item-filial">
+							<div class="item-filial__img">
+								<img src="img/contacts/filials/03.webp" alt="Image" class="ibg">
+							</div>
+							<div class="item-filial__info">
+								<div class="item-filial__title">Название</div>
+								<div class="item-filial__info-contacts">
+									<a class="item-filial__link" href="tel:+72223331177">+7 (222) 333-11-77</a>
+									<a class="item-filial__link" href="mailto:topchinalogistics@mail.com">Topchinalogistics@mail.com</a>
+									<div class="item-filial__link"><span>пн-сб</span> 9:00-21:00</div>
+								</div>
+								<div class="item-filial__social social">
+									<a href="" class="social__item">
+										<span>Telegram</span>
+										<svg>
+											<use xlink:href="img/icons/icons.svg#arrow"></use>
+										</svg>
+									</a>
+									<a href="" class="social__item">
+										<span>WhatsaApp</span>
+										<svg>
+											<use xlink:href="img/icons/icons.svg#arrow"></use>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="filial__item item-filial">
+							<div class="item-filial__img">
+								<img src="img/contacts/filials/04.webp" alt="Image" class="ibg">
+							</div>
+							<div class="item-filial__info">
+								<div class="item-filial__title">Название</div>
+								<div class="item-filial__info-contacts">
+									<a class="item-filial__link" href="tel:+72223331177">+7 (222) 333-11-77</a>
+									<a class="item-filial__link" href="mailto:topchinalogistics@mail.com">Topchinalogistics@mail.com</a>
+									<div class="item-filial__link"><span>пн-сб</span> 9:00-21:00</div>
+								</div>
+								<div class="item-filial__social social">
+									<a href="" class="social__item">
+										<span>Telegram</span>
+										<svg>
+											<use xlink:href="img/icons/icons.svg#arrow"></use>
+										</svg>
+									</a>
+									<a href="" class="social__item">
+										<span>WhatsaApp</span>
+										<svg>
+											<use xlink:href="img/icons/icons.svg#arrow"></use>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="filial__item item-filial">
+							<div class="item-filial__img">
+								<img src="img/contacts/filials/05.webp" alt="Image" class="ibg">
+							</div>
+							<div class="item-filial__info">
+								<div class="item-filial__title">Название</div>
+								<div class="item-filial__info-contacts">
+									<a class="item-filial__link" href="tel:+72223331177">+7 (222) 333-11-77</a>
+									<a class="item-filial__link" href="mailto:topchinalogistics@mail.com">Topchinalogistics@mail.com</a>
+									<div class="item-filial__link"><span>пн-сб</span> 9:00-21:00</div>
+								</div>
+								<div class="item-filial__social social">
+									<a href="" class="social__item">
+										<span>Telegram</span>
+										<svg>
+											<use xlink:href="img/icons/icons.svg#arrow"></use>
+										</svg>
+									</a>
+									<a href="" class="social__item">
+										<span>WhatsaApp</span>
+										<svg>
+											<use xlink:href="img/icons/icons.svg#arrow"></use>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="map section">
+				<div class="section__container">
+					<h2 class="section__title title"><span>Карта</span> с&nbsp;филиалами</h2>
+					<div class="map__wrapper" id="map"></div>
+				</div>
+			</section>
+
+
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__contacts contacts-footer">
+					<div class="contacts-footer__item">
+						<a href="tel:+73332220088">+7 (333) 222-00-88</a> <span>/</span>
+						<a href="tel:+72223331177">+7 (222) 333-11-77</a>
+					</div>
+					<div class="contacts-footer__item">
+						<a href="mailto:Topchinalogistics@mail.com">Topchinalogistics@mail.com</a>
+					</div>
+				</div>
+				<div class="footer__menu menu-footer">
+					<div class="menu-footer__col">
+						<div class="menu-footer__title">Грузоперевозки</div>
+						<ul>
+							<li><a href="">Грузоперевозки автотранспорто</a></li>
+							<li><a href="">Доставка море</a></li>
+							<li><a href="">Железнодорожные перевозк</a></li>
+							<li><a href="">Доставка сборных грузов</a></li>
+						</ul>
+					</div>
+					<div class="menu-footer__col">
+						<div class="menu-footer__title">Для клиентов</div>
+						<ul>
+							<li><a href="">Расчет цены на доставку груз</a></li>
+							<li><a href="">Калькулято</a></li>
+							<li><a href="">Контакт</a></li>
+							<li><a href="">О нас</a></li>
+						</ul>
+					</div>
+					<div class="menu-footer__col">
+						<div class="menu-footer__title">Основные услуги:</div>
+						<ul>
+							<li><a href="">услуга </a></li>
+							<li><a href="">услуга </a></li>
+							<li><a href="">услуга </a></li>
+							<li><a href="">услуга 4</a></li>
+						</ul>
+					</div>
+					<div class="menu-footer__col menu-footer__col_social">
+						<a href="" class="menu-footer__btn button">
+							<span>Рассчитать стоимость</span>
+							<svg>
+								<use xlink:href="img/icons/icons.svg#arrow"></use>
+							</svg>
+						</a>
+						<div class="menu-footer__col-block">
+							<div class="menu-footer__text">© 2025, ООО «Top China Logistics»</div>
+							<a href="" class="menu-footer__link">Пользовательское соглашение</a>
+							<a href="" class="menu-footer__link">Политика конфиденциальности</a>
+						</div>
+						<div class="menu-footer__social">
+							<a href="">
+								<span>Telegram</span>
+								<svg>
+									<use xlink:href="img/icons/icons.svg#arrow"></use>
+								</svg>
+							</a>
+							<a href="">
+								<span>WhatsaApp</span>
+								<svg>
+									<use xlink:href="img/icons/icons.svg#arrow"></use>
+								</svg>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="footer__address address">
+					<div class="address__title">адреса:</div>
+					<div class="address__inner">
+						<div class="address__item">
+							<div class="address__item-top">
+								Склад Москве
+							</div>
+							<div class="address__item-text">
+								2 я институтская 6 ст 86 (Склад хранения)
+							</div>
+						</div>
+						<div class="address__item">
+							<div class="address__item-top">
+								Склад Фулфилмент
+							</div>
+							<div class="address__item-text">
+								2 я институтская 6 ст 86 (Склад хранения)
+							</div>
+						</div>
+						<div class="address__item">
+							<div class="address__item-top">
+								Офис
+							</div>
+							<div class="address__item-text">
+								2 я институтская 6 ст 86 (Склад хранения)
+							</div>
+						</div>
+						<div class="address__item">
+							<div class="address__item-top">
+								Склад Воронеж
+							</div>
+							<div class="address__item-text">
+								2 я институтская 6 ст 86 (Склад хранения)
+							</div>
+						</div>
+						<div class="address__item">
+							<div class="address__item-top">
+								Склад Москве
+							</div>
+							<div class="address__item-text">
+								2 я институтская 6 ст 86 (Склад хранения)
+							</div>
+						</div>
+						<div class="address__item">
+							<div class="address__item-top">
+								Склад Москве
+							</div>
+							<div class="address__item-text">
+								2 я институтская 6 ст 86 (Склад хранения)
+							</div>
+						</div>
+						<div class="address__item">
+							<div class="address__item-top">
+								Склад Москве
+							</div>
+							<div class="address__item-text">
+								2 я институтская 6 ст 86 (Склад хранения)
+							</div>
+						</div>
+						<div class="address__item">
+							<div class="address__item-top">
+								Склад Москве
+							</div>
+							<div class="address__item-text">
+								2 я институтская 6 ст 86 (Склад хранения)
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+	</div>
+	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&_v=20250805130943" type="text/javascript"></script>
+	<script>
+		ymaps.ready(function() {
+			const map = new ymaps.Map("map", {
+				center: [55.751244, 37.618423], // Москва по центру
+				zoom: 4,
+				controls: [] // ⛔️ Убираем ВСЕ контролы
+			});
+
+			// Координаты (рандомные по России)
+			const points = [{
+					coords: [59.9343, 30.3351],
+					title: "Санкт-Петербург"
+				},
+				{
+					coords: [56.8389, 60.6057],
+					title: "Екатеринбург"
+				},
+				{
+					coords: [43.1056, 131.8735],
+					title: "Владивосток"
+				},
+				{
+					coords: [55.7963, 49.1088],
+					title: "Казань"
+				},
+				{
+					coords: [53.3474, 83.7788],
+					title: "Барнаул"
+				}
+			];
+
+			// Кастомная иконка
+			const iconUrl = 'img/icons/map.svg'; // замени на свою
+
+			points.forEach(point => {
+				const placemark = new ymaps.Placemark(point.coords, {
+					balloonContent: point.title
+				}, {
+					iconLayout: 'default#image',
+					iconImageHref: iconUrl,
+					iconImageSize: [100, 100],
+					iconImageOffset: [-50, -50]
+				});
+
+				map.geoObjects.add(placemark);
+			});
+		});
+	</script>
+
+	<script src="js/app.min.js?_v=20250805130943"></script>
+
+	<div class="cookie js-cookie">
+		<div class="cookie__container">
+			<div class="cookie__text">
+				<p>Мы используем файлы cookie для обеспечения корректной работы сайта, аналитики и&nbsp;повышения
+					удобства.</p>
+				<p>Продолжая использовать сайт, вы соглашаетесь на&nbsp;использование файлов cookie.</p>
+				<p><a href="">Политика конфиденциальности и&nbsp;обработки персональных данных</a></p>
+			</div>
+			<div class="cookie__action">
+				<button class="cookie__btn button" type="button">
+					<span>Принять</span>
+					<i>
+						<svg>
+							<use xlink:href="img/icons/icons.svg#arrow"></use>
+						</svg>
+					</i>
+				</button>
+			</div>
+		</div>
+	</div>
+
+</body>
+
+</html>
