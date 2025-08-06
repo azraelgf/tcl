@@ -4777,6 +4777,7 @@
             slidesPerView: 1,
             spaceBetween: 0,
             speed: 800,
+            loop: true,
             navigation: {
                 prevEl: ".how-work-prev",
                 nextEl: ".how-work-next"
@@ -4916,6 +4917,7 @@
             loop: false,
             freeMode: true,
             freeModeMomentum: false,
+            loop: true,
             pagination: {
                 el: ".swiper-pagination",
                 clickable: true
