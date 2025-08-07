@@ -4840,24 +4840,14 @@
                     slidesPerView: 1,
                     autoHeight: true
                 },
-                415: {
-                    slidesPerView: 1.3,
-                    autoHeight: true
-                },
                 480: {
-                    slidesPerView: 1.8
+                    slidesPerView: 1.4
                 },
                 576: {
                     slidesPerView: 2
                 },
-                640: {
-                    slidesPerView: 2.2
-                },
                 768: {
-                    slidesPerView: 2.6
-                },
-                820: {
-                    slidesPerView: 2.8
+                    slidesPerView: 2.4
                 },
                 992: {
                     slidesPerView: 3

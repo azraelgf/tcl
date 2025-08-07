@@ -2628,9 +2628,6 @@ body::after {
   .swiper-controls {
     margin-top: 3.125rem
   }
-  .item-team {
-    min-height: 28.125rem
-  }
   .hero__content {
     max-width: 41.875rem
   }
@@ -2833,9 +2830,6 @@ body::after {
   }
   .item-reviews__top-title {
     font-size: .875rem
-  }
-  .item-team {
-    min-height: 18.125rem
   }
   .connect-calc__title {
     font-size: 1rem
@@ -4360,9 +4354,6 @@ body::after {
   .item-reviews__top-title {
     font-size: clamp(.875rem ,.6666666667rem + .6944444444vw ,1.5rem)
   }
-  .item-team {
-    min-height: clamp(18.125rem ,14.7916666667rem + 11.1111111111vw ,28.125rem)
-  }
   .connect-calc__title {
     font-size: clamp(1rem ,.9166666667rem + .2777777778vw ,1.25rem)
   }
@@ -4427,11 +4418,6 @@ body::after {
   }
   .item-filial {
     gap: clamp(1.875rem ,-.463362069rem + 3.7715517241vw ,4.0625rem)
-  }
-}
-@media (min-width:20em)and (max-width:29.99875em) {
-  .item-team {
-    min-height: clamp(22.5rem ,11.2485935742rem + 56.257032129vw ,28.125rem)
   }
 }
 @media (any-hover:hover) {
