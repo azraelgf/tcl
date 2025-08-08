@@ -4841,13 +4841,13 @@
                     autoHeight: true
                 },
                 480: {
-                    slidesPerView: 1.4
+                    slidesPerView: 1.7
                 },
-                576: {
-                    slidesPerView: 2
+                620: {
+                    slidesPerView: 2.4
                 },
                 768: {
-                    slidesPerView: 2.4
+                    slidesPerView: 2.8
                 },
                 992: {
                     slidesPerView: 3
