@@ -5,7 +5,7 @@
 	<title>Главная</title>
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
-	<link rel="stylesheet" href="css/style.min.css?_v=20250808111402">
+	<link rel="stylesheet" href="css/style.min.css">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -132,7 +132,7 @@
 					<h2 class="calc__title title">
 						Калькулятор доставки груза из <span>Китая&nbsp;в&nbsp;Россию</span>
 					</h2>
-					<div class="calc__inner">
+					<div class="calc__inner form">
 						<!--calc data -->
 						<div class="calc__sel">
 							<div class="sel-item">
@@ -156,7 +156,7 @@
 								<label class="sel-item__label">Тип перевозки
 									<select name="form[]" data-class-modif="transport">
 										<option value="" selected>Тип перевозки</option>
-										<option value="1">Тип перевозки</option>
+										<option value="1">Сборный груз. Ж/Д</option>
 										<option value="2">КТип перевозки2</option>
 										<option value="3">КТип перевозки3</option>
 										<option value="4">КТип перевозки4</option>
@@ -170,86 +170,60 @@
 						</div>
 						<!--end calc data -->
 						<!--calc-product -->
-						<div class="calc__inner calc__inner_product">
-							<div class="calc__sel calc__sel_white">
-								<button class="calc__sel-del" type="button">
-									<svg>
-										<use xlink:href="img/icons/icons.svg#del"></use>
-									</svg>
-								</button>
-								<div class="calc__sel-block sel-item sel-item_white">
-									<label class="sel-item__label">ТН ВЭД
-										<input class="input" readonly autocomplete="off" type="text" name="form[]" value="Обувь"></label>
-								</div>
-								<button class="calc__sel-btn button" type="button">Подобрать</button>
-							</div>
-							<div class="calc__sel calc__sel_white">
-								<button class="calc__sel-del" type="button">
-									<svg>
-										<use xlink:href="img/icons/icons.svg#del"></use>
-									</svg>
-								</button>
-								<div class="calc__sel-block sel-item sel-item_white">
-									<label class="sel-item__label">ТН ВЭД
-										<input class="input" readonly autocomplete="off" type="text" name="form[]" value="Игрушки"></label>
-								</div>
-								<button class="calc__sel-btn button" type="button">Подобрать</button>
+						<div class="calc__sel calc__sel_white">
+							<button class="calc__sel-del" type="button">
+								<svg>
+									<use xlink:href="img/icons/icons.svg#del"></use>
+								</svg>
+							</button>
+							<div class="calc__sel-block sel-item sel-item_white">
+								<label class="sel-item__label">ТН ВЭД
+									<input class="input" readonly autocomplete="off" type="text" name="form[]" value="Обувь"></label>
 							</div>
 						</div>
-
 						<!--end calc-product -->
-						<div class="calc__more">
-							<button class="calc__btn button button_light" type="button">Добавить товар +</button>
-						</div>
-					</div>
-					<div class="calc__action">
-						<div class="calc__connect connect-calc">
-							<div class="connect-calc__inner">
-								<div class="connect-calc__title">ПОДКЛЮЧИТЬ УСЛУГУ АВТОВЫКУПА
-									С&nbsp;ПЛОЩАДОК 1688, ALIBABA TAOBAO?
+						<div class="calc__sel calc__sel_col2">
+							<div class="form__row form__row_flex">
+								<div class="form__column">
+									<div class="sel-item">
+										<label class="sel-item__label">Имя
+											<input class="input" autocomplete="off" type="text" name="form[]" placeholder="Введите имя"></label>
+									</div>
 								</div>
-								<div class="connect-calc__text">Комиссия 10% <br>
-									от стоимости инвойса
+								<div class="form__column">
+									<div class="sel-item">
+										<label class="sel-item__label">Телефон
+											<input class="input" autocomplete="off" type="text" name="form[]" placeholder="Введите номер телефона"></label>
+									</div>
 								</div>
-								<div class="connect-calc__value">
-									<div class="options">
-										<div class="options__item">
-											<input id="o_1" class="options__input" checked type="radio" value="1" name="option">
-											<label for="o_1" class="options__label">
-												<span class="options__text">Да</span>
-											</label>
-										</div>
-										<div class="options__item">
-											<input id="o_2" class="options__input" type="radio" value="2" name="option">
-											<label for="o_2" class="options__label">
-												<span class="options__text">Нет</span>
-											</label>
-										</div>
+								<div class="form__column">
+									<div class="sel-item">
+										<label class="sel-item__label">Почта
+											<input class="input" autocomplete="off" type="text" name="form[]" placeholder="Введите адрес почты"></label>
 									</div>
 								</div>
 							</div>
-							<div class="connect-calc__total">
-								<button class="connect-calc__total-btn button button_icon" type="button">
-									<span>Рассчитать доставку</span>
-									<i class="button__icon">
+							<div class="form__row">
+								<div class="checkbox">
+									<input id="c_1" class="checkbox__input" type="checkbox" value="1" name="form[]">
+									<label for="c_1" class="checkbox__label">
+										<span class="checkbox__text">Согласен с политикой <a href="">обработки персональных данных</a></span>
+									</label>
+								</div>
+							</div>
+							<div class="form__row">
+								<button class="form__button button button_icon button_form" type="button">
+									<span>Рассчиать доставку</span>
+									<span class="button__icon">
 										<svg>
 											<use xlink:href="img/icons/icons.svg#arrow"></use>
 										</svg>
-									</i>
+									</span>
 								</button>
 							</div>
 						</div>
 					</div>
-					<div class="calc__info">
-						<div class="calc__info-text">
-							Основная задача ТСС выстроить партнёрские взаимоотношения так, чтобы сотрудничая с&nbsp;нами,
-							вы могли спокойно заниматься своей работой и&nbsp;решать ключевые задачи в&nbsp;своём бизнесе
-						</div>
-						<div class="calc__info-numbers currency">
-							<div class="currency__item"><span>$</span>81.14</div>
-							<div class="currency__item"><span>¥</span>11.09</div>
-						</div>
-					</div>
+
 				</div>
 			</section>
 			<section class="services section section_bg bg-gray">
@@ -1181,7 +1155,7 @@
 		</footer>
 
 	</div>
-	<script src="js/app.min.js?_v=20250808111402"></script>
+	<script src="js/app.min.js"></script>
 	<div class="cookie js-cookie">
 		<div class="cookie__container">
 			<div class="cookie__text">
