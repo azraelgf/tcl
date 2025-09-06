@@ -5,7 +5,7 @@
 	<title>Наша команда</title>
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
-	<link rel="stylesheet" href="css/style.min.css">
+	<link rel="stylesheet" href="css/style.min.css?_v=20250906144004">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -89,7 +89,7 @@
 							<a href="tel:+73332220088">+7 (333) 222-00-88</a>
 							<a href="mailto:Topchinalogistics@mail.com">Topchinalogistics@mail.com</a>
 						</div>
-						<button class="header__btn button button_create" data-da=".menu__body, 1199.98" type="button">
+						<button class="header__btn button button_create" data-da=".menu__body, 1199.98" data-popup="#calc" type="button">
 							<span>Рассчитать стоимость</span>
 							<svg>
 								<use xlink:href="img/icons/icons.svg#arrow"></use>
@@ -345,7 +345,6 @@
 						</a>
 						<div class="menu-footer__col-block">
 							<div class="menu-footer__text">© 2025, ООО «Top China Logistics»</div>
-							<a href="" class="menu-footer__link">Пользовательское соглашение</a>
 							<a href="" class="menu-footer__link">Политика конфиденциальности</a>
 						</div>
 						<div class="menu-footer__social">
@@ -437,7 +436,117 @@
 		</footer>
 
 	</div>
-	<script src="js/app.min.js"></script>
+	<div id="calc" aria-hidden="true" class="popup popup_calc">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close">
+					<svg viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M1.73333 1.48883L21.5469 21.0288" stroke="#000" stroke-linecap="square" />
+						<path d="M21.2667 1.48883L1.45309 21.0288" stroke="#000" stroke-linecap="square" />
+					</svg>
+				</button>
+				<div class="calc">
+					<h2 class="calc__title title title_h2">
+						Калькулятор доставки груза из&nbsp;Китая&nbsp;в&nbsp;Россию
+					</h2>
+					<div class="calc__inner form">
+						<!--calc data -->
+						<div class="calc__sel">
+							<div class="sel-item">
+								<label class="sel-item__label">Условия поставки
+									<select name="form[]" data-class-modif="delivery">
+										<option value="" selected>Условия поставки</option>
+										<option value="1">Контракт импортера</option>
+										<option value="2">Контракт импортера2</option>
+										<option value="3">Контракт импортера3</option>
+										<option value="4">Контракт импортера4</option>
+									</select>
+								</label>
+							</div>
+							<div class="sel-item">
+								<label class="sel-item__label">Город отгрузки
+									<input class="input" autocomplete="off" type="text" name="form[]" placeholder="Введите город отгрузки"></label>
+							</div>
+						</div>
+						<div class="calc__sel">
+							<div class="sel-item">
+								<label class="sel-item__label">Тип перевозки
+									<select name="form[]" data-class-modif="transport">
+										<option value="" selected>Тип перевозки</option>
+										<option value="1">Сборный груз. Ж/Д</option>
+										<option value="2">КТип перевозки2</option>
+										<option value="3">КТип перевозки3</option>
+										<option value="4">КТип перевозки4</option>
+									</select>
+								</label>
+							</div>
+							<div class="sel-item">
+								<label class="sel-item__label">Город назначения
+									<input class="input" autocomplete="off" type="text" name="form[]" placeholder="Введите город назначения..."></label>
+							</div>
+						</div>
+						<!--end calc data -->
+						<!--calc-product -->
+						<div class="calc__sel calc__sel_white">
+							<button class="calc__sel-del" type="button">
+								<svg>
+									<use xlink:href="img/icons/icons.svg#del"></use>
+								</svg>
+							</button>
+							<div class="calc__sel-block sel-item sel-item_white">
+								<label class="sel-item__label">ТН ВЭД
+									<input class="input" autocomplete="off" type="text" name="form[]" value="Обувь"></label>
+							</div>
+						</div>
+						<!--end calc-product -->
+						<div class="calc__sel calc__sel_col2">
+							<div class="form__row form__row_flex">
+								<div class="form__column">
+									<div class="sel-item">
+										<label class="sel-item__label">Имя
+											<input class="input" autocomplete="off" type="text" name="form[]" placeholder="Введите имя"></label>
+									</div>
+								</div>
+								<div class="form__column">
+									<div class="sel-item">
+										<label class="sel-item__label">Телефон
+											<input class="input" autocomplete="off" type="text" name="form[]" placeholder="Введите номер телефона"></label>
+									</div>
+								</div>
+								<div class="form__column">
+									<div class="sel-item">
+										<label class="sel-item__label">Почта
+											<input class="input" autocomplete="off" type="text" name="form[]" placeholder="Введите адрес почты"></label>
+									</div>
+								</div>
+							</div>
+							<div class="form__row">
+								<div class="checkbox">
+									<input id="cc_1" class="checkbox__input" type="checkbox" value="1" name="form[]">
+									<label for="cc_1" class="checkbox__label">
+										<span class="checkbox__text">Согласен с политикой <a href="">обработки персональных данных</a></span>
+									</label>
+								</div>
+							</div>
+							<div class="form__row">
+								<button class="form__button button button_icon button_form" type="button">
+									<span>Рассчиать доставку</span>
+									<span class="button__icon">
+										<svg>
+											<use xlink:href="img/icons/icons.svg#arrow"></use>
+										</svg>
+									</span>
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<script src="js/app.min.js?_v=20250906144004"></script>
 	<div class="cookie js-cookie">
 		<div class="cookie__container">
 			<div class="cookie__text">
